@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55965B021C76321C0088F8B4"
+               BlueprintIdentifier = "55114DCD1C7F55630071F3AA"
                BuildableName = "movin_on.app"
                BlueprintName = "movin_on"
                ReferencedContainer = "container:movin_on.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55965B1E1C76321C0088F8B4"
+               BlueprintIdentifier = "55114DE11C7F55640071F3AA"
                BuildableName = "movin_onTests.xctest"
                BlueprintName = "movin_onTests"
                ReferencedContainer = "container:movin_on.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55965B291C76321C0088F8B4"
+               BlueprintIdentifier = "55114DEC1C7F55640071F3AA"
                BuildableName = "movin_onUITests.xctest"
                BlueprintName = "movin_onUITests"
                ReferencedContainer = "container:movin_on.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55965B021C76321C0088F8B4"
+            BlueprintIdentifier = "55114DCD1C7F55630071F3AA"
             BuildableName = "movin_on.app"
             BlueprintName = "movin_on"
             ReferencedContainer = "container:movin_on.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55965B021C76321C0088F8B4"
+            BlueprintIdentifier = "55114DCD1C7F55630071F3AA"
             BuildableName = "movin_on.app"
             BlueprintName = "movin_on"
             ReferencedContainer = "container:movin_on.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55965B021C76321C0088F8B4"
+            BlueprintIdentifier = "55114DCD1C7F55630071F3AA"
             BuildableName = "movin_on.app"
             BlueprintName = "movin_on"
             ReferencedContainer = "container:movin_on.xcodeproj">

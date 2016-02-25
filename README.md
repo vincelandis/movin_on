@@ -6,4 +6,5 @@ Project Contributors:
 
 Vince Landis | vincelandis@gmail.com
 
+Links for work session today:
 
