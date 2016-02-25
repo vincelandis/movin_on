@@ -14,6 +14,7 @@
 		55114DDC1C7F55640071F3AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55114DDA1C7F55640071F3AA /* LaunchScreen.storyboard */; };
 		55114DE71C7F55640071F3AA /* movin_onTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55114DE61C7F55640071F3AA /* movin_onTests.swift */; };
 		55114DF21C7F55640071F3AA /* movin_onUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55114DF11C7F55640071F3AA /* movin_onUITests.swift */; };
+		55114E001C7F62D50071F3AA /* movinon-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55114DFF1C7F62D50071F3AA /* movinon-webfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		55114DED1C7F55640071F3AA /* movin_onUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = movin_onUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55114DF11C7F55640071F3AA /* movin_onUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movin_onUITests.swift; sourceTree = "<group>"; };
 		55114DF31C7F55640071F3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55114DFF1C7F62D50071F3AA /* movinon-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "movinon-webfont.ttf"; path = "resources/movinon-webfont.ttf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		55114DC51C7F55630071F3AA = {
 			isa = PBXGroup;
 			children = (
+				55114E011C7F62F20071F3AA /* resources */,
 				55114DD01C7F55630071F3AA /* movin_on */,
 				55114DE51C7F55640071F3AA /* movin_onTests */,
 				55114DF01C7F55640071F3AA /* movin_onUITests */,
@@ -123,6 +126,14 @@
 				55114DF31C7F55640071F3AA /* Info.plist */,
 			);
 			path = movin_onUITests;
+			sourceTree = "<group>";
+		};
+		55114E011C7F62F20071F3AA /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				55114DFF1C7F62D50071F3AA /* movinon-webfont.ttf */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 				55114DDC1C7F55640071F3AA /* LaunchScreen.storyboard in Resources */,
 				55114DD91C7F55640071F3AA /* Assets.xcassets in Resources */,
 				55114DD71C7F55640071F3AA /* Main.storyboard in Resources */,
+				55114E001C7F62D50071F3AA /* movinon-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +496,7 @@
 				55114DF81C7F55640071F3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55114DF91C7F55640071F3AA /* Build configuration list for PBXNativeTarget "movin_onTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				55114DFB1C7F55640071F3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55114DFC1C7F55640071F3AA /* Build configuration list for PBXNativeTarget "movin_onUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				55114DFE1C7F55640071F3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
