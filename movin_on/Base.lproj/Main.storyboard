@@ -3,41 +3,87 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="movinon-webfont.ttf">
+            <string>MovinOn-Title</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="movin_on" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="H7M-UD-iy0"/>
+                        <viewControllerLayoutGuide type="bottom" id="SDy-3N-iSI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="ozc-8I-OUK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iPJ-wD-F0a">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gcZ-Hc-Yda">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crowd_background" translatesAutoresizingMaskIntoConstraints="NO" id="Ibx-i4-kZp">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="399"/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="MOVIN' ON 2016" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eI8-sL-gUW">
-                                        <rect key="frame" x="47" y="8" width="507" height="128"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="DiwanMishafi" family="Mishafi" pointSize="49"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cI2-s6-EVa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crowd_background" translatesAutoresizingMaskIntoConstraints="NO" id="dlY-te-GRs">
+                                                <rect key="frame" x="0.0" y="16" width="375" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="TY8-k3-cSp"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="MOVIN' ON 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCW-7T-89Q">
+                                                <rect key="frame" x="15" y="49" width="345" height="66"/>
+                                                <fontDescription key="fontDescription" name="MovinOn-Title" family="Movin On" pointSize="60"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="I6Q-ax-ytv"/>
+                                            <constraint firstItem="dlY-te-GRs" firstAttribute="top" secondItem="cI2-s6-EVa" secondAttribute="top" constant="16" id="LOb-Cc-NSJ"/>
+                                            <constraint firstItem="dlY-te-GRs" firstAttribute="leading" secondItem="cI2-s6-EVa" secondAttribute="leading" id="VEo-bf-FAx"/>
+                                            <constraint firstItem="FCW-7T-89Q" firstAttribute="top" secondItem="cI2-s6-EVa" secondAttribute="top" constant="33" id="X1O-Dj-gAa"/>
+                                            <constraint firstAttribute="trailing" secondItem="dlY-te-GRs" secondAttribute="trailing" id="a4r-qb-UJS"/>
+                                            <constraint firstItem="FCW-7T-89Q" firstAttribute="centerX" secondItem="cI2-s6-EVa" secondAttribute="centerX" id="kej-hp-N6a"/>
+                                            <constraint firstAttribute="trailing" secondItem="FCW-7T-89Q" secondAttribute="trailing" constant="15" id="tdz-RH-4aU"/>
+                                            <constraint firstItem="FCW-7T-89Q" firstAttribute="leading" secondItem="cI2-s6-EVa" secondAttribute="leading" constant="15" id="wOo-V1-Rhv"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="X1O-Dj-gAa"/>
+                                                <exclude reference="wOo-V1-Rhv"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cI2-s6-EVa" secondAttribute="bottom" id="4vk-Pr-rxu"/>
+                                    <constraint firstItem="cI2-s6-EVa" firstAttribute="leading" secondItem="gcZ-Hc-Yda" secondAttribute="leading" id="8hl-m0-NjI"/>
+                                    <constraint firstItem="cI2-s6-EVa" firstAttribute="top" secondItem="gcZ-Hc-Yda" secondAttribute="top" id="LK3-lV-WvK"/>
+                                    <constraint firstAttribute="trailing" secondItem="cI2-s6-EVa" secondAttribute="trailing" id="luc-aK-TVu"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gcZ-Hc-Yda" secondAttribute="trailing" constant="-16" id="Dys-Dd-Yrt"/>
+                            <constraint firstItem="SDy-3N-iSI" firstAttribute="top" secondItem="gcZ-Hc-Yda" secondAttribute="bottom" id="aUU-qj-Rz3"/>
+                            <constraint firstItem="gcZ-Hc-Yda" firstAttribute="top" secondItem="H7M-UD-iy0" secondAttribute="bottom" id="hSy-BU-krN"/>
+                            <constraint firstItem="gcZ-Hc-Yda" firstAttribute="leading" secondItem="ozc-8I-OUK" secondAttribute="leadingMargin" constant="-16" id="hgT-dl-cNF"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405" y="350"/>
+            <point key="canvasLocation" x="392.5" y="321.5"/>
         </scene>
     </scenes>
     <resources>

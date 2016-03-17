@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,11 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crowd_background" translatesAutoresizingMaskIntoConstraints="NO" id="xvw-TA-Nur">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crowd_background" translatesAutoresizingMaskIntoConstraints="NO" id="xvw-TA-Nur">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xvw-TA-Nur" secondAttribute="trailing" constant="-20" id="2qK-7n-dWl"/>
+                            <constraint firstItem="xvw-TA-Nur" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="NmO-a4-a2l"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="xvw-TA-Nur" secondAttribute="bottom" id="nDf-Z5-lZc"/>
+                            <constraint firstItem="xvw-TA-Nur" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="nbb-uc-4b6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
