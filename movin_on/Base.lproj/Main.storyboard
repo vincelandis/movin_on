@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="movinon-webfont.ttf">
+            <string>MovinOn-Title</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Map-->
         <scene sceneID="GW1-Tc-XPX">
@@ -24,8 +29,8 @@
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upS-Ik-KbB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've reached this screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZND-TK-fES">
-                                                <rect key="frame" x="104" y="333" width="206" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OMG You've reached this screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZND-TK-fES">
+                                                <rect key="frame" x="82" y="333" width="250" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -59,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwZ-Cv-7k6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1609" y="387"/>
+            <point key="canvasLocation" x="801" y="541"/>
         </scene>
         <!--Connect-->
         <scene sceneID="yyg-21-bmT">
@@ -79,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQ4-So-ISb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1072" y="1260"/>
+            <point key="canvasLocation" x="1730" y="541"/>
         </scene>
         <!--Experience-->
         <scene sceneID="KNv-77-aUk">
@@ -99,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MgQ-qf-jbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1598" y="1260"/>
+            <point key="canvasLocation" x="1264" y="541"/>
         </scene>
         <!--Lineup-->
         <scene sceneID="lKr-Ae-PPV">
@@ -119,21 +124,43 @@
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhx-CE-H8a">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="crowd_background" translatesAutoresizingMaskIntoConstraints="NO" id="teN-AQ-sdy">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Byj-Mc-3Gj">
-                                                <rect key="frame" x="8" y="133" width="398" height="185"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bX8-KD-NMq">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crowd_background" translatesAutoresizingMaskIntoConstraints="NO" id="Xkv-rN-k3H">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="120" id="e1a-FQ-ydL"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVIN' ON 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tl-kH-wTo">
+                                                        <rect key="frame" x="43" y="25" width="329" height="69"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="69" id="46p-JV-vB9"/>
+                                                            <constraint firstAttribute="width" constant="329" id="g18-aW-7Tu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="MovinOn-Title" family="Movin On" pointSize="60"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="185" id="f6i-tC-fNe"/>
+                                                    <constraint firstItem="Xkv-rN-k3H" firstAttribute="leading" secondItem="bX8-KD-NMq" secondAttribute="leading" id="BaM-z2-jrc"/>
+                                                    <constraint firstItem="6Tl-kH-wTo" firstAttribute="top" secondItem="bX8-KD-NMq" secondAttribute="top" constant="25" id="GxF-gc-fXK"/>
+                                                    <constraint firstItem="Xkv-rN-k3H" firstAttribute="top" secondItem="bX8-KD-NMq" secondAttribute="top" id="f5i-7C-y2Q"/>
+                                                    <constraint firstItem="6Tl-kH-wTo" firstAttribute="leading" secondItem="bX8-KD-NMq" secondAttribute="leading" constant="43" id="fGM-lV-BVE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6Tl-kH-wTo" secondAttribute="trailing" constant="42" id="frS-I7-yr7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Xkv-rN-k3H" secondAttribute="trailing" id="jC9-lu-SKk"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Byj-Mc-3Gj" secondAttribute="trailing" constant="8" id="6m3-BN-iTR"/>
-                                            <constraint firstItem="Byj-Mc-3Gj" firstAttribute="leading" secondItem="uhx-CE-H8a" secondAttribute="leading" constant="8" id="GC6-5T-Acr"/>
-                                            <constraint firstItem="Byj-Mc-3Gj" firstAttribute="top" secondItem="teN-AQ-sdy" secondAttribute="bottom" constant="8" id="yL9-Hn-YAN"/>
+                                            <constraint firstItem="bX8-KD-NMq" firstAttribute="leading" secondItem="uhx-CE-H8a" secondAttribute="leading" id="FUu-Qo-PY6"/>
+                                            <constraint firstAttribute="bottom" secondItem="bX8-KD-NMq" secondAttribute="bottom" id="aO5-lH-Alv"/>
+                                            <constraint firstItem="bX8-KD-NMq" firstAttribute="centerX" secondItem="uhx-CE-H8a" secondAttribute="centerX" id="acf-kS-rGQ"/>
+                                            <constraint firstItem="bX8-KD-NMq" firstAttribute="top" secondItem="uhx-CE-H8a" secondAttribute="top" id="ljk-CQ-frt"/>
+                                            <constraint firstAttribute="trailing" secondItem="bX8-KD-NMq" secondAttribute="trailing" id="wnr-u8-mB5"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
@@ -159,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNq-BO-H1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1609" y="-421"/>
+            <point key="canvasLocation" x="337" y="541"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yPw-lh-21H">
@@ -180,7 +207,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zy1-13-gLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="789" y="-90"/>
+            <point key="canvasLocation" x="1021" y="-484"/>
         </scene>
     </scenes>
     <resources>
