@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oy3-YT-9CN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gqn-aw-FPY">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,11 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MNc-sj-ImK">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNc-sj-ImK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upS-Ik-KbB">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upS-Ik-KbB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've reached this screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZND-TK-fES">
+                                                <rect key="frame" x="104" y="333" width="206" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ZND-TK-fES" firstAttribute="centerY" secondItem="upS-Ik-KbB" secondAttribute="centerY" id="2Ut-vy-cMO"/>
+                                            <constraint firstItem="ZND-TK-fES" firstAttribute="centerX" secondItem="upS-Ik-KbB" secondAttribute="centerX" id="RO8-ja-Afl"/>
+                                        </constraints>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,54 +54,52 @@
                             <constraint firstAttribute="trailingMargin" secondItem="MNc-sj-ImK" secondAttribute="trailing" constant="-20" id="zIO-yS-GR4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="Src-A7-Yhi"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="music_tab_1" id="Src-A7-Yhi"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwZ-Cv-7k6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1609" y="387"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="27T-mt-0Gw">
+        <!--Connect-->
+        <scene sceneID="yyg-21-bmT">
             <objects>
-                <viewController id="oy3-YT-9CN" sceneMemberID="viewController">
+                <viewController id="T1E-Hh-bAs" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AJI-nZ-Wyb"/>
-                        <viewControllerLayoutGuide type="bottom" id="9vK-rZ-aon"/>
+                        <viewControllerLayoutGuide type="top" id="dlr-pV-Tl6"/>
+                        <viewControllerLayoutGuide type="bottom" id="J4F-9M-VXJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VCO-db-s76">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="Fir-bv-cwr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zq-B9-tvb">
-                                <rect key="frame" x="-4" y="618" width="383" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="Jh3-2q-MuJ"/>
-                                </constraints>
-                                <items>
-                                    <tabBarItem title="Lineup" id="4qq-8o-uKG"/>
-                                    <tabBarItem title="Map" id="tIK-Jp-ZuM"/>
-                                    <tabBarItem title="Experience" id="fBG-f3-uFF"/>
-                                    <tabBarItem title="Connect" id="BXm-11-6bB"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="9vK-rZ-aon" firstAttribute="top" secondItem="3Zq-B9-tvb" secondAttribute="bottom" id="YP1-Ot-YoT"/>
-                            <constraint firstItem="3Zq-B9-tvb" firstAttribute="leading" secondItem="VCO-db-s76" secondAttribute="leadingMargin" constant="-20" id="rhb-BN-zzf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Zq-B9-tvb" secondAttribute="trailing" constant="-20" id="yFj-Ct-zbp"/>
-                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="b4z-Yn-38C" kind="show" id="9dA-2S-GNO"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Connect" image="music_tab_1" id="020-QZ-68I"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RpN-3Z-N2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQ4-So-ISb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023.5" y="708.5"/>
+            <point key="canvasLocation" x="1072" y="1260"/>
+        </scene>
+        <!--Experience-->
+        <scene sceneID="KNv-77-aUk">
+            <objects>
+                <viewController id="WpI-XL-Zi1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EuK-bG-ZOM"/>
+                        <viewControllerLayoutGuide type="bottom" id="gmd-gV-KdM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jhU-QM-GRm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Experience" image="music_tab_1" id="AWy-qG-WYr"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MgQ-qf-jbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1598" y="1260"/>
         </scene>
         <!--Lineup-->
         <scene sceneID="lKr-Ae-PPV">
@@ -144,7 +154,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="9Xn-ag-cMs" secondAttribute="trailing" constant="-20" id="eSU-TF-uGK"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Lineup" id="Dgb-vz-dWF"/>
+                    <tabBarItem key="tabBarItem" title="Lineup" selectedImage="crowd_background" id="Dgb-vz-dWF"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNq-BO-H1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -163,6 +173,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="GIG-pU-YSz" kind="relationship" relationship="viewControllers" id="0fT-BX-eVi"/>
+                        <segue destination="b4z-Yn-38C" kind="relationship" relationship="viewControllers" id="gSO-V9-e95"/>
+                        <segue destination="WpI-XL-Zi1" kind="relationship" relationship="viewControllers" id="yCo-vt-Hvg"/>
+                        <segue destination="T1E-Hh-bAs" kind="relationship" relationship="viewControllers" id="yLg-Ol-hzh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zy1-13-gLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -172,5 +185,6 @@
     </scenes>
     <resources>
         <image name="crowd_background" width="960" height="640"/>
+        <image name="music_tab_1" width="24" height="24"/>
     </resources>
 </document>
