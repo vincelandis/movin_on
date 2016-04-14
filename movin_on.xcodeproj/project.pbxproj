@@ -39,7 +39,7 @@
 		55114DD11C7F55630071F3AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55114DD31C7F55630071F3AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55114DD61C7F55640071F3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		55114DD81C7F55640071F3AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55114DD81C7F55640071F3AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = movin_on/Assets.xcassets; sourceTree = "<group>"; };
 		55114DDB1C7F55640071F3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55114DDD1C7F55640071F3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55114DE21C7F55640071F3AA /* movin_onTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = movin_onTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,6 @@
 				55114DD11C7F55630071F3AA /* AppDelegate.swift */,
 				55114DD31C7F55630071F3AA /* ViewController.swift */,
 				55114DD51C7F55640071F3AA /* Main.storyboard */,
-				55114DD81C7F55640071F3AA /* Assets.xcassets */,
 				55114DDA1C7F55640071F3AA /* LaunchScreen.storyboard */,
 				55114DDD1C7F55640071F3AA /* Info.plist */,
 			);
@@ -131,6 +130,7 @@
 		55114E011C7F62F20071F3AA /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				55114DD81C7F55640071F3AA /* Assets.xcassets */,
 				55114DFF1C7F62D50071F3AA /* movinon-webfont.ttf */,
 			);
 			name = resources;
